@@ -1,0 +1,259 @@
+/* Navigation Section */
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: grey; */
+    position: sticky;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.7;
+}
+
+#logo{
+    margin: -5px 4px;
+}
+
+#logo img{
+    height: 30px;
+    margin: 4px 15px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px;
+    margin-top: 10px;
+    opacity: 0.8;
+    }
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+    flex-wrap:wrap;
+}
+
+#navbar ul li a{
+    /* display: flex; */
+    /* padding: 3px 8px; */
+    margin: 0px 7px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    /* font-family: 'Noto Sans', sans-serif; */
+}
+
+/* Home Section */
+#home-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: 350px;
+    width: 100%;
+    color: white;
+    z-index: -3;
+}
+
+#home-section::before{
+    content: '';
+    background: url(../img/back.avif) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 362px;
+    width: 100%;
+    z-index: -4;
+    opacity: 0.9;
+}
+#home-section div{
+display: block;
+margin: auto;
+width: 70%;
+}
+
+/* Services */
+#our-services{
+    border-radius: 20px;
+    margin-top: 57px;
+    width: 98%;
+    height: 487px;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.box{
+    height: 167px;
+    width: 95%;
+    margin: 3px;
+    border-radius: 20px;
+    padding: 3px;
+    border: 2px solid darkred;
+    background-color: rgb(240, 232, 232);
+}
+
+.box img{
+    height: 40px;
+    width: 50px;
+    border-radius: 25px;
+    margin-bottom: 10px
+}
+
+.home{
+    padding: 0px 10px 0px;
+}
+
+/* Clients */
+#clients{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+    margin-top: 77px;
+    position: relative;
+    height: 438px;
+    color: white;
+}
+
+#clients::before{
+    content: '';
+    background: url(../img/Food_background4.jpeg)no-repeat center center/cover;
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    width: 100%;
+    height: 350px;
+    z-index: -4;
+    opacity: 0.8;
+}
+
+#clients img{
+    box-shadow: 0px 0px 3px black;
+    height: 55px;
+    width: 55px;
+    margin: 0px 14px;
+    margin-top: 44px;
+    border-radius: 20px;
+    z-index: -3;
+}
+
+/* Contacts */
+#contacts{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+height:  510px;
+width: 100%;
+position: relative;
+color: white;
+}
+
+#contacts::before{
+    content: '';
+    position: absolute;
+    background: url('../img/contacts.jpg');
+    top: 0px;
+    left: 0px;
+    height:  510px;
+    width: 100%;
+    z-index: -4;
+    opacity: 0.9;
+    }
+
+    div .contact-box{
+        display: block;
+        margin: auto;
+        width: 50%;
+        z-index: -3;
+        }
+
+        #contacts .contact-box form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            width: 60%;
+            margin: auto;
+            height: 100%;
+            
+            }
+            
+            #contacts .contact-box label, input, textarea{
+                display: inline-block;
+            width: 100%;
+            position: relative;
+            z-index: -1;
+            }
+
+    #contacts .contact-box label{
+font-size:large;
+/* font-weight: bold; */
+font-family: 'Noto Sans', sans-serif;
+    }
+
+#contacts .contact-box div{
+margin: 4px;
+}
+
+    #contacts h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    #contacts input{
+        height: 42px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    #contacts textarea{
+            border: none;
+        border-radius: 10px;
+    }
+
+/* Utility classes */
+.center-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 400px;
+    margin: auto;
+    /* box-sizing: border-box; */
+}
+
+.center-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.h-primary{
+    font-size: 1.5rem;
+    margin: 10px 0px;
+    z-index: -3;
+}
